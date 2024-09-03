@@ -1,0 +1,234 @@
+/* CSS Resets */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Font Classes */
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Universal Styles */
+body {
+  background-color: #f2f2f2;
+  color: hsl(229, 6%, 66%);
+}
+
+h1,
+h2,
+h3 {
+  color: hsl(234, 12%, 34%);
+}
+
+/* Main Container */
+main {
+  margin-top: 5.67rem;
+  margin-bottom: 5.2rem;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1, h2 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    width: 20.73rem;
+    line-height: 1.67rem;
+    margin-top: 0.87rem;
+    margin-bottom: 5.07rem;
+    text-align: center;
+  }
+}
+
+/* Cards Section */
+section {
+  display: grid;
+  justify-items: center;
+  gap: 1.67rem;
+}
+
+article {
+  background-color: #fff;
+  border-radius: 8px;
+  border-top-style: solid;
+  border-top-width: 0.27rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-left: 1.87rem;
+  padding-top: 1.8rem;
+  padding-bottom: 1.87rem;
+  width: 21.47rem;
+
+  h3 {
+    font-size: 1.33rem;
+    line-height: 1.53rem;
+  }
+
+  img {
+    margin-top: 2.2rem;
+    margin-left: auto;
+    margin-right: 1.87rem;
+  }
+
+  p {
+    font-size: 0.87rem;
+    width: 81.67%;
+  }
+}
+
+/* Individual Card */
+.supervisor {
+  border-color: hsl(180, 62%, 55%);
+}
+
+.team-builder {
+  border-color: hsl(0, 78%, 62%);
+}
+
+.karma {
+  border-color: hsl(34, 97%, 64%);
+}
+
+.calculator {
+  border-color: hsl(212, 86%, 64%);
+}
+
+@media (min-width: 481px) {
+  main {
+    margin-top: 5.33rem;
+    margin-bottom: 4rem;
+  }
+
+  header {
+    h1, h2 {
+      font-size: 2.4rem;
+      line-height: 1.53;
+    }
+
+    p {
+      min-width: 36rem;
+      line-height: 1.67;
+      margin-bottom: 5.6rem;
+    }
+  }
+
+  section {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  article{
+    width: 23.33rem;
+    padding-left: 2.13rem;
+    padding-top: 2.13rem;
+    padding-bottom: 2.13rem;
+
+    img {
+      margin-top: 2.67rem;
+      margin-left: auto;
+      margin-right: 2.13rem;
+    }
+
+    p{
+      margin-top: 0.4rem;
+    }
+  }
+
+  .grid-item {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+  }
+
+  .grid-item:nth-child(1) {
+    grid-column: 1 / 2;
+    align-self: center;
+    justify-self: flex-end;
+  }
+
+  .grid-item:nth-child(2) {
+    grid-column: 2/3;
+    grid-row: 1 / 2;
+  }
+
+  .grid-item:nth-child(3) {
+    grid-column: 2/ 3;
+    grid-row: 2/3;
+  }
+
+  .grid-item:nth-child(4) {
+    grid-column: 3 / 4;
+    align-self: center;
+    justify-self: flex-start;
+  }
+
+
+}
